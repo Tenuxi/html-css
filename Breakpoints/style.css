@@ -32,18 +32,51 @@ header {
 #headerBottomLeft {
     width: 200px;
     background-color: #a9c2ab;
-    height: 65px;
+    min-height: 75px;
+    border-bottom: 1px solid #000;
+    border-right: 1px solid #000;
+    border-radius: 0 0 60px 0;
+    display: inline-table;
+    padding-top: 15px;
+    padding-bottom: 50px;
+}
 }
 
 #headerBottomMiddle {
     /*background-color: #a9c2ab;*/
     border-top: solid 1px #000;
+    width: 100%;
 }
 
 #headerBottomRight {
     background-color: #a9c2ab;
     width: 200px;
     height: 25px;
+    border-bottom: 1px solid #000;
+    border-left: 1px solid #000;
+    border-radius: 0 0 0 60px;
+}
+
+/*Navigation*/
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+nav button {
+    margin: 5px;
+}
+
+/*Side Navigation*/
+
+#sideNav {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
 }
 
 /*Content*/
