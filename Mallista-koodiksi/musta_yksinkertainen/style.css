@@ -114,9 +114,7 @@ content {
 }
 
 
-
 /*MEDIAQUERY*/
-
 
 /*Alle 1280px*/
 
@@ -152,8 +150,22 @@ content {
 
     .mobileMenu {
         display: unset;
-        padding: 2em;
+        padding-top: 3em;
+        padding-right: 1em;
+        padding-bottom: 2em;
     }
+
+    .buttonNavMobile {
+        display: block;
+    }
+
+    .mobileMenu a.icon {
+        background: black;
+        display: block;
+        position: absolute;
+        right: 1.5em;
+        top: 1.5em;
+      }
 
     content {
         margin-top: 5em;
@@ -181,8 +193,8 @@ content {
         margin-top: 1em;
         margin: auto;
         margin-left: 0.2em;
-        min-width: 200;
-        max-width: 600;
+        min-width: 200px;
+        max-width: 500px;
         min-height: 300px;
     }
 
