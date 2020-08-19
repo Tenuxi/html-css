@@ -6,6 +6,9 @@
 /*Fonts*/
 
 @import url('https://fonts.googleapis.com/css2?family=Red+Rose:wght@300;700&display=swap');
+/*font-family: 'Red Rose', cursive;*/
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;700&display=swap');
+/*font-family: 'Rubik', sans-serif;*/
 
 
 /*Body*/
@@ -13,7 +16,7 @@
 body {
     background-color: #000;
     color: #fff;
-    font-family: 'Red Rose', cursive;
+    font-family: 'Rubik', sans-serif;
     background-image: url('img/elephant.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -28,24 +31,25 @@ a {
     color: #fff;
 }
 
-p {
-    font-size: 1.5em;
+.pInfo {
+    font-size: 1em;
+    margin-top: 2em;
 }
 
 h1 {
     font-weight: bold;
-    font-size: 5.5em;
+    font-size: 3.5em;
 }
 
 /*Button styles*/
 
 .buttonNormal {
     display: inherit;
-    background-color: rgb(199, 103, 103);
+    background-color: #C79288;
     font-weight: 700;
-    border: 1px solid #fff;
-    font-size: 2em;
-    padding: 0.5em;
+    border: 1px solid #825F5A;
+    font-size: 1.2em;
+    padding: 1em;
     margin-top: 1.5em;
 }
 
@@ -62,7 +66,7 @@ header {
 .logo {
     font-size: 3em;
     padding: 1em;
-    font-weight: 700;
+    font-weight: bold;
 }
 
 
@@ -71,25 +75,30 @@ header {
 nav {
     display: flex;
     flex-wrap: nowrap;
-    padding: 3em;
+    padding: 4em;
 }
 
 .buttonNav {
-    font-size: 2em;
+    font-size: 1em;
     padding: 0.5em;
-    margin: 0.5EM;
+    margin-right: 0.5em;
 }
 
 .buttonNavActive {
-    background-color: rgb(199, 103, 103);
+    background-color: #C79288;
     font-weight: 700;
-    border: 1px solid #fff;
+    border: 1px solid #825F5A;
 }
 
 .buttonNav:hover {
-    background-color: rgb(199, 103, 103);
-    font-weight: 700;
-    border: 1px solid #fff;
+    background-color: #C79288;
+    border: 1px solid #825F5A;
+}
+
+/*Mobile navigation*/
+
+.mobileMenu {
+    display: none;
 }
 
 
@@ -97,9 +106,85 @@ nav {
 
 content {
     display: inline-block;
-    margin-top: 3em;
+    margin-top: 10em;
     margin-left: 3em;
     min-width: 400px;
     max-width: 700px;
     min-height: 400px;
+}
+
+
+
+/*MEDIAQUERY*/
+
+
+/*Alle 1280px*/
+
+@media only screen and (max-width: 1280px) {
+
+    body {
+        background-image: url('img/elephant_small.png');
+    }
+
+}
+
+/*Alle 992px*/
+
+@media only screen and (max-width: 992px) {
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    .buttonNormal {
+        padding: 0.5em;
+    }
+
+    .logo {
+        font-size: 2em;
+        padding: 0.5;
+        font-weight: bold;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .mobileMenu {
+        display: unset;
+        padding: 2em;
+    }
+
+    content {
+        margin-top: 5em;
+    }
+    
+}
+
+/*Alle 600px*/
+
+@media only screen and (max-width: 600px) {
+
+    body {
+        background-image: url('img/elephant_xs.png');
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .logo {
+        font-size: 1.5em;
+    }
+
+    content {
+        margin-top: 1em;
+        margin: auto;
+        margin-left: 0.2em;
+        min-width: 200;
+        max-width: 600;
+        min-height: 300px;
+    }
+
+
 }
