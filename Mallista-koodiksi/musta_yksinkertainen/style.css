@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*Fonts*/
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Rose:wght@300;700&display=swap');
+
+
+/*Body*/
+
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Red Rose', cursive;
+    background-image: url('img/elephant.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom right; 
+}
+
+
+/*Text styles*/
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+p {
+    font-size: 1.5em;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 5.5em;
+}
+
+/*Button styles*/
+
+.buttonNormal {
+    display: inherit;
+    background-color: rgb(199, 103, 103);
+    font-weight: 700;
+    border: 1px solid #fff;
+    font-size: 2em;
+    padding: 0.5em;
+    margin-top: 1.5em;
+}
+
+
+/*Header*/
+
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 3em;
+    padding: 1em;
+    font-weight: 700;
+}
+
+
+/*Navigation*/
+
+nav {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 3em;
+}
+
+.buttonNav {
+    font-size: 2em;
+    padding: 0.5em;
+    margin: 0.5EM;
+}
+
+.buttonNavActive {
+    background-color: rgb(199, 103, 103);
+    font-weight: 700;
+    border: 1px solid #fff;
+}
+
+.buttonNav:hover {
+    background-color: rgb(199, 103, 103);
+    font-weight: 700;
+    border: 1px solid #fff;
+}
+
+
+/*Content*/
+
+content {
+    display: inline-block;
+    margin-top: 3em;
+    margin-left: 3em;
+    min-width: 400px;
+    max-width: 700px;
+    min-height: 400px;
+}
