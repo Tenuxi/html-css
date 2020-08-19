@@ -14,14 +14,33 @@
 /*Body*/
 
 body {
-    background-color: #000;
     color: #fff;
     font-family: 'Rubik', sans-serif;
-    background-image: url('img/elephant.png');
+    /*background-image: url('img/elephant.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: bottom right; 
+    background-position: bottom right; */
 }
+
+/* set background image per page */
+    .home-bg {
+        background-image: url('img/home.bg.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;  
+    }
+
+    .info-bg {
+        background-color: #000;
+        background-image: url('img/elephant.png');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: bottom right;     
+    }
 
 
 /*Text styles*/
@@ -109,12 +128,21 @@ nav {
 /*Content*/
 
 content {
-    display: inline-block;
+    display: block;
     margin-top: 10em;
-    margin-left: 3em;
-    min-width: 400px;
-    max-width: 700px;
-    min-height: 400px;
+    /*margin-left: 3em;*/
+    /*min-width: 400px;*/
+    max-width: 1280px;
+    /*min-height: 400px;*/
+    margin: auto;
+}
+
+.contentDark {
+    display: inline-block;
+    background-color: #00000070;
+    border: 1px solid #fff;
+    border-radius: 1px;
+    padding: 3em;
 }
 
 
@@ -124,8 +152,16 @@ content {
 
 @media only screen and (max-width: 1280px) {
 
-    body {
+    .info-bg {
         background-image: url('img/elephant_small.png');
+    }
+
+    .contentDark {
+        border: unset;
+        border-top: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+        border-right: none;
+        border-left: none;
     }
 
 }
@@ -181,7 +217,7 @@ content {
 
 @media only screen and (max-width: 600px) {
 
-    body {
+    .info-bg {
         background-image: url('img/elephant_xs.png');
     }
 
@@ -193,14 +229,14 @@ content {
         font-size: 1.5em;
     }
 
-    content {
+    /*content {
         margin-top: 1em;
         margin: auto;
         margin-left: 0.2em;
         min-width: 200px;
         max-width: 500px;
         min-height: 300px;
-    }
+    }*/
 
 
 }
